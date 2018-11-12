@@ -44,7 +44,7 @@
         <Button fx:id="btn2" maxWidth="Infinity" mnemonicParsing="false" text="2" onAction="#dva" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
         <Button fx:id="btn3" maxWidth="Infinity" mnemonicParsing="false" text="3" onAction="#tri" GridPane.columnIndex="2" GridPane.rowIndex="4"/>
         <Button  maxWidth="Infinity" mnemonicParsing="false" text="." GridPane.columnIndex="2" GridPane.rowIndex="5"/>
-        <Button  maxWidth="Infinity" mnemonicParsing="false" text="0" GridPane.columnSpan="2" GridPane.rowIndex="5"/>
+        <Button fx:id="btn0" maxWidth="Infinity" mnemonicParsing="false" text="0" onAction="#nula" GridPane.columnSpan="2" GridPane.rowIndex="5"/>
         <Button  maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" text="+" GridPane.columnIndex="3" GridPane.rowIndex="2" GridPane.rowSpan="2"/>
         <Button id="jednakoBtn" maxHeight="Infinity" maxWidth="Infinity" mnemonicParsing="false" text="=" GridPane.columnIndex="3" GridPane.rowIndex="4" GridPane.rowSpan="2"/>
         <Label fx:id="display" id="display" maxWidth="Infinity" prefHeight="30.0" text="${controller.ulaz}" GridPane.columnIndex="0" GridPane.columnSpan="4" GridPane.rowIndex="0"/>

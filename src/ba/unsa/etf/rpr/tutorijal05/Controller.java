@@ -162,4 +162,11 @@ public class Controller {
         }
     }
 
+    public void plus(ActionEvent actionEvent) {
+        zbir += Double.parseDouble(unos.get());
+        operacija = "+";
+        brisi = true;
+    }
+
+
 }

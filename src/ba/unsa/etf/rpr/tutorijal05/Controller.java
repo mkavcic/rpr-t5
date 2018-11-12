@@ -111,4 +111,17 @@ public class Controller {
         }
     }
 
+    public void osam(ActionEvent actionEvent) {
+        if (unos.get().equals("0") && operacija.equals("")) {
+            unos.set("8");
+        } else if (!operacija.equals("") && brisi) {
+            unos.set("8");
+            brisi = !brisi;
+        } else if (!operacija.equals("")) {
+            unos.set(unos.get() + "8");
+        } else {
+            unos.set(unos.get() + "8");
+        }
+    }
+
 }

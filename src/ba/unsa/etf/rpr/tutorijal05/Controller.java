@@ -7,7 +7,7 @@ public class Controller {
     private SimpleStringProperty unos;
     private String operacija = "";
     private boolean brisi = false;
-    private double zbir=0;
+    private double zbir = 0;
 
     public Controller() {
         unos = new SimpleStringProperty("0");
@@ -167,6 +167,4 @@ public class Controller {
         operacija = "+";
         brisi = true;
     }
-
-
 }

@@ -38,7 +38,7 @@
         <Button  maxWidth="Infinity" mnemonicParsing="false" text="8" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
         <Button maxWidth="Infinity" mnemonicParsing="false" text="9" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
         <Button fx:id="btn4" maxWidth="Infinity" mnemonicParsing="false" text="4" onAction="#cetiri" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
-        <Button maxWidth="Infinity" mnemonicParsing="false" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+        <Button fx:id="btn5" maxWidth="Infinity" mnemonicParsing="false" text="5" onAction="#pet" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
         <Button  maxWidth="Infinity" mnemonicParsing="false" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
         <Button  fx:id="btn1" maxWidth="Infinity" mnemonicParsing="false" text="1" onAction="#jedan" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
         <Button fx:id="btn2" maxWidth="Infinity" mnemonicParsing="false" text="2" onAction="#dva" GridPane.columnIndex="1" GridPane.rowIndex="4"/>

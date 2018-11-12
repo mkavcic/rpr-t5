@@ -72,4 +72,17 @@ public class Controller {
         }
     }
 
+    public void pet(ActionEvent actionEvent) {
+        if (unos.get().equals("0") && operacija.equals("")) {
+            unos.set("5");
+        } else if (!operacija.equals("") && brisi) {
+            unos.set("5");
+            brisi = !brisi;
+        } else if (!operacija.equals("")) {
+            unos.set(unos.get() + "5");
+        } else {
+            unos.set(unos.get() + "5");
+        }
+    }
+
 }

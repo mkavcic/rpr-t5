@@ -41,7 +41,7 @@
         <Button maxWidth="Infinity" mnemonicParsing="false" text="5" GridPane.columnIndex="1" GridPane.rowIndex="3"/>
         <Button  maxWidth="Infinity" mnemonicParsing="false" text="6" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
         <Button  fx:id="btn1" maxWidth="Infinity" mnemonicParsing="false" text="1" onAction="#jedan" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
-        <Button  maxWidth="Infinity" mnemonicParsing="false" text="2" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+        <Button fx:id="btn2" maxWidth="Infinity" mnemonicParsing="false" text="2" onAction="#dva" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
         <Button  maxWidth="Infinity" mnemonicParsing="false" text="3" GridPane.columnIndex="2" GridPane.rowIndex="4"/>
         <Button  maxWidth="Infinity" mnemonicParsing="false" text="." GridPane.columnIndex="2" GridPane.rowIndex="5"/>
         <Button  maxWidth="Infinity" mnemonicParsing="false" text="0" GridPane.columnSpan="2" GridPane.rowIndex="5"/>

@@ -33,4 +33,17 @@ public class Controller {
         }
     }
 
+    public void dva(ActionEvent actionEvent) {
+        if (unos.get().equals("0") && operacija.equals("")) {
+            unos.set("2");
+        } else if (!operacija.equals("") && brisi) {
+            unos.set("2");
+            brisi = !brisi;
+        } else if (!operacija.equals("")) {
+            unos.set(unos.get() + "2");
+        } else {
+            unos.set(unos.get() + "2");
+        }
+    }
+
 }

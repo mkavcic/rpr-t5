@@ -85,4 +85,17 @@ public class Controller {
         }
     }
 
+    public void sest(ActionEvent actionEvent) {
+        if (unos.get().equals("0") && operacija.equals("")) {
+            unos.set("6");
+        } else if (!operacija.equals("") && brisi) {
+            unos.set("6");
+            brisi = !brisi;
+        } else if (!operacija.equals("")) {
+            unos.set(unos.get() + "6");
+        } else {
+            unos.set(unos.get() + "6");
+        }
+    }
+
 }

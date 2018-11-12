@@ -7,6 +7,7 @@ public class Controller {
     private SimpleStringProperty unos;
     private String operacija = "";
     private boolean brisi = false;
+    private double zbir=0;
 
     public Controller() {
         unos = new SimpleStringProperty("0");
@@ -152,6 +153,13 @@ public class Controller {
 
     public void dm(ActionEvent actionEvent) {
         unos.set(unos.get() + ".");
+    }
+
+    public void jednako(ActionEvent actionEvent) {
+        if (operacija.equals("+")) {
+            unos.set(String.valueOf((Double.parseDouble(unos.get()) + zbir)));
+            operacija = "";
+        }
     }
 
 }

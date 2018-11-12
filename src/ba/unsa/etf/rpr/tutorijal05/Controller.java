@@ -124,4 +124,17 @@ public class Controller {
         }
     }
 
+    public void devet(ActionEvent actionEvent) {
+        if (unos.get().equals("0") && operacija.equals("")) {
+            unos.set("9");
+        } else if (!operacija.equals("") && brisi) {
+            unos.set("9");
+            brisi = !brisi;
+        } else if (!operacija.equals("")) {
+            unos.set(unos.get() + "9");
+        } else {
+            unos.set(unos.get() + "9");
+        }
+    }
+
 }

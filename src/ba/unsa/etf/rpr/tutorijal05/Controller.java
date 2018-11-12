@@ -98,4 +98,17 @@ public class Controller {
         }
     }
 
+    public void sedam(ActionEvent actionEvent) {
+        if (unos.get().equals("0") && operacija.equals("")) {
+            unos.set("7");
+        } else if (!operacija.equals("") && brisi) {
+            unos.set("7");
+            brisi = !brisi;
+        } else if (!operacija.equals("")) {
+            unos.set(unos.get() + "7");
+        } else {
+            unos.set(unos.get() + "7");
+        }
+    }
+
 }

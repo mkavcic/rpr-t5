@@ -1,7 +1,7 @@
-#jednakoBtn {
+#equalsBtn {
     -fx-background-color: lightpink;
 }
 
-#izlaz {
+#display {
     -fx-background-color: lightgreen;
 }

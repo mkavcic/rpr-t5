@@ -150,4 +150,8 @@ public class Controller {
         }
     }
 
+    public void dm(ActionEvent actionEvent) {
+        unos.set(unos.get() + ".");
+    }
+
 }

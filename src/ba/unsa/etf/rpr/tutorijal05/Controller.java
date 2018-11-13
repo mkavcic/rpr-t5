@@ -10,6 +10,7 @@ public class Controller {
     private double zbir = 0;
     private double razlika=0;
     private double proizvod=1;
+    private double kolicnik=1;
 
     public Controller() {
         unos = new SimpleStringProperty("0");
@@ -170,6 +171,10 @@ public class Controller {
             unos.set(String.valueOf((proizvod*Double.parseDouble(unos.get()))));
             operacija = "";
         }
+        if (operacija.equals("/")) {
+            unos.set(String.valueOf((kolicnik/Double.parseDouble(unos.get()))));
+            operacija = "";
+        }
     }
 
     public void plus(ActionEvent actionEvent) {
@@ -187,6 +192,12 @@ public class Controller {
     public void times(ActionEvent actionEvent) {
         proizvod*= Double.parseDouble(unos.get());
         operacija = "x";
+        brisi = true;
+    }
+
+    public void divide(ActionEvent actionEvent) {
+        kolicnik*= Double.parseDouble(unos.get());
+        operacija = "/";
         brisi = true;
     }
 }

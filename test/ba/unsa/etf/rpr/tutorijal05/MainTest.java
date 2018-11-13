@@ -176,4 +176,25 @@ class MainTest {
         robot.clickOn("#equalsBtn");
         assertEquals("20448.0", display.getText());
     }
+
+    @Test
+    public void percent (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn1");
+        robot.clickOn("#btn3");
+        robot.clickOn("#percentBtn");
+        robot.clickOn("#equalsBtn");
+        assertEquals("0.13", display.getText());
+    }
+
+    @Test
+    public void percent1 (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn8");
+        robot.clickOn("#btn5");
+        robot.clickOn("#btn2");
+        robot.clickOn("#percentBtn");
+        robot.clickOn("#equalsBtn");
+        assertEquals("8.52", display.getText());
+    }
 }

@@ -32,7 +32,7 @@
     <children>
         <Button maxWidth="Infinity" mnemonicParsing="false" text="\%" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
         <Button maxWidth="Infinity" mnemonicParsing="false" text="/" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
-        <Button maxWidth="Infinity" mnemonicParsing="false" text="x" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+        <Button fx:id="timesBtn" id="timesBtn" maxWidth="Infinity" mnemonicParsing="false" text="x" onAction="#times" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
         <Button fx:id="minusBtn" id="minusBtn" maxWidth="Infinity" mnemonicParsing="false" text="-" onAction="#minus" GridPane.columnIndex="3" GridPane.rowIndex="1"/>
         <Button fx:id="btn7" maxWidth="Infinity" mnemonicParsing="false" text="7" onAction="#sedam" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
         <Button fx:id="btn8" maxWidth="Infinity" mnemonicParsing="false" text="8" onAction="#osam" GridPane.columnIndex="1" GridPane.rowIndex="2"/>

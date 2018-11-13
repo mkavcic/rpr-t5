@@ -211,4 +211,15 @@ class MainTest {
         robot.clickOn("#equalsBtn");
         assertEquals("8.52", display.getText());
     }
+    @Test
+    public void dot (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn8");
+        robot.clickOn("#btn5");
+        robot.clickOn("#dotBtn");
+        robot.clickOn("#btn2");
+        robot.clickOn("#dotBtn");
+        assertEquals("85.2", display.getText());
+    }
+
 }

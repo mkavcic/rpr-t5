@@ -233,4 +233,13 @@ class MainTest {
         assertEquals("Err", display.getText());
     }
 
+    @Test
+    public void zero (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#divideBtn");
+        robot.clickOn("#btn4");
+        robot.clickOn("#equalsBtn");
+        assertEquals("0.0", display.getText());
+    }
+
 }

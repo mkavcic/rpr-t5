@@ -131,7 +131,7 @@ class MainTest {
         assertEquals("300.0", display.getText());
     }
     @Test
-    public void divison (FxRobot robot) {
+    public void divison(FxRobot robot) {
         display = robot.lookup("#display").queryAs(Label.class);
         robot.clickOn("#btn6");
         robot.clickOn("#divideBtn");
@@ -141,7 +141,7 @@ class MainTest {
     }
 
     @Test
-    public void division1 (FxRobot robot) {
+    public void division1(FxRobot robot) {
         display = robot.lookup("#display").queryAs(Label.class);
         robot.clickOn("#btn8");
         robot.clickOn("#btn5");
@@ -154,7 +154,7 @@ class MainTest {
     }
 
     @Test
-    public void division2 (FxRobot robot) {
+    public void division2(FxRobot robot) {
         display = robot.lookup("#display").queryAs(Label.class);
         robot.clickOn("#btn8");
         robot.clickOn("#btn5");
@@ -167,7 +167,7 @@ class MainTest {
     }
 
     @Test
-    public void times (FxRobot robot) {
+    public void times(FxRobot robot) {
         display = robot.lookup("#display").queryAs(Label.class);
         robot.clickOn("#btn1");
         robot.clickOn("#btn3");
@@ -179,7 +179,7 @@ class MainTest {
     }
 
     @Test
-    public void times1 (FxRobot robot) {
+    public void times1(FxRobot robot) {
         display = robot.lookup("#display").queryAs(Label.class);
         robot.clickOn("#btn8");
         robot.clickOn("#btn5");
@@ -192,7 +192,7 @@ class MainTest {
     }
 
     @Test
-    public void percent (FxRobot robot) {
+    public void percent(FxRobot robot) {
         display = robot.lookup("#display").queryAs(Label.class);
         robot.clickOn("#btn1");
         robot.clickOn("#btn3");
@@ -202,7 +202,7 @@ class MainTest {
     }
 
     @Test
-    public void percent1 (FxRobot robot) {
+    public void percent1(FxRobot robot) {
         display = robot.lookup("#display").queryAs(Label.class);
         robot.clickOn("#btn8");
         robot.clickOn("#btn5");
@@ -211,8 +211,9 @@ class MainTest {
         robot.clickOn("#equalsBtn");
         assertEquals("8.52", display.getText());
     }
+
     @Test
-    public void dot (FxRobot robot) {
+    public void dot(FxRobot robot) {
         display = robot.lookup("#display").queryAs(Label.class);
         robot.clickOn("#btn8");
         robot.clickOn("#btn5");
@@ -223,7 +224,7 @@ class MainTest {
     }
 
     @Test
-    public void divideByZero (FxRobot robot) {
+    public void divideByZero(FxRobot robot) {
         display = robot.lookup("#display").queryAs(Label.class);
         robot.clickOn("#btn8");
         robot.clickOn("#btn5");
@@ -234,7 +235,7 @@ class MainTest {
     }
 
     @Test
-    public void zero (FxRobot robot) {
+    public void zero(FxRobot robot) {
         display = robot.lookup("#display").queryAs(Label.class);
         robot.clickOn("#divideBtn");
         robot.clickOn("#btn4");
@@ -242,4 +243,12 @@ class MainTest {
         assertEquals("0.0", display.getText());
     }
 
+    @Test
+    public void zero1(FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#plusBtn");
+        robot.clickOn("#btn4");
+        robot.clickOn("#equalsBtn");
+        assertEquals("4.0", display.getText());
+    }
 }

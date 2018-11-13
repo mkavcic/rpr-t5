@@ -222,4 +222,15 @@ class MainTest {
         assertEquals("85.2", display.getText());
     }
 
+    @Test
+    public void divideByZero (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn8");
+        robot.clickOn("#btn5");
+        robot.clickOn("#divideBtn");
+        robot.clickOn("#btn0");
+        robot.clickOn("#equalsBtn");
+        assertEquals("Err", display.getText());
+    }
+
 }

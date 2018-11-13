@@ -8,6 +8,7 @@ public class Controller {
     private String operacija = "";
     private boolean brisi = false;
     private double zbir = 0;
+    private double razlika=0;
 
     public Controller() {
         unos = new SimpleStringProperty("0");
@@ -160,11 +161,21 @@ public class Controller {
             unos.set(String.valueOf((Double.parseDouble(unos.get()) + zbir)));
             operacija = "";
         }
+        if (operacija.equals("-")) {
+            unos.set(String.valueOf((razlika-Double.parseDouble(unos.get()))));
+            operacija = "";
+        }
     }
 
     public void plus(ActionEvent actionEvent) {
         zbir += Double.parseDouble(unos.get());
         operacija = "+";
+        brisi = true;
+    }
+
+    public void minus(ActionEvent actionEvent) {
+        razlika += Double.parseDouble(unos.get());
+        operacija = "-";
         brisi = true;
     }
 }

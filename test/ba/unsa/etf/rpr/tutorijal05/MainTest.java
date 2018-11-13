@@ -152,6 +152,20 @@ class MainTest {
         robot.clickOn("#equalsBtn");
         assertEquals("35.5", display.getText());
     }
+
+    @Test
+    public void division2 (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn8");
+        robot.clickOn("#btn5");
+        robot.clickOn("#btn2");
+        robot.clickOn("#divideBtn");
+        robot.clickOn("#btn3");
+        robot.clickOn("#btn3");
+        robot.clickOn("#equalsBtn");
+        assertEquals("25.818181818181817", display.getText());
+    }
+
     @Test
     public void times (FxRobot robot) {
         display = robot.lookup("#display").queryAs(Label.class);

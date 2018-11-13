@@ -130,5 +130,26 @@ class MainTest {
         robot.clickOn("#equalsBtn");
         assertEquals("300.0", display.getText());
     }
+    @Test
+    public void divison (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn6");
+        robot.clickOn("#divideBtn");
+        robot.clickOn("#btn3");
+        robot.clickOn("#equalsBtn");
+        assertEquals("2.0", display.getText());
+    }
 
+    @Test
+    public void division1 (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn8");
+        robot.clickOn("#btn5");
+        robot.clickOn("#btn2");
+        robot.clickOn("#divideBtn");
+        robot.clickOn("#btn2");
+        robot.clickOn("#btn4");
+        robot.clickOn("#equalsBtn");
+        assertEquals("35.5", display.getText());
+    }
 }

@@ -11,6 +11,7 @@ public class Controller {
     private double razlika=0;
     private double proizvod=1;
     private double kolicnik=1;
+    private double posto=1;
 
     public Controller() {
         unos = new SimpleStringProperty("0");
@@ -175,6 +176,10 @@ public class Controller {
             unos.set(String.valueOf((kolicnik/Double.parseDouble(unos.get()))));
             operacija = "";
         }
+        if (operacija.equals("%")) {
+            unos.set(String.valueOf((posto*0.01)));
+            operacija = "";
+        }
     }
 
     public void plus(ActionEvent actionEvent) {
@@ -198,6 +203,12 @@ public class Controller {
     public void divide(ActionEvent actionEvent) {
         kolicnik*= Double.parseDouble(unos.get());
         operacija = "/";
+        brisi = true;
+    }
+
+    public void percent(ActionEvent actionEvent) {
+        posto*= Double.parseDouble(unos.get());
+        operacija = "%";
         brisi = true;
     }
 }

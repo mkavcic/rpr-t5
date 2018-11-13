@@ -30,7 +30,7 @@
         <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
     </padding>
     <children>
-        <Button maxWidth="Infinity" mnemonicParsing="false" text="\%" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+        <Button fx:id="percentBtn" id="percentBtn" maxWidth="Infinity" mnemonicParsing="false" text="\%" onAction="#percent" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
         <Button fx:id="divideBtn" id="divideBtn" maxWidth="Infinity" mnemonicParsing="false" text="/" onAction="#divide" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
         <Button fx:id="timesBtn" id="timesBtn" maxWidth="Infinity" mnemonicParsing="false" text="x" onAction="#times" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
         <Button fx:id="minusBtn" id="minusBtn" maxWidth="Infinity" mnemonicParsing="false" text="-" onAction="#minus" GridPane.columnIndex="3" GridPane.rowIndex="1"/>

@@ -152,4 +152,28 @@ class MainTest {
         robot.clickOn("#equalsBtn");
         assertEquals("35.5", display.getText());
     }
+    @Test
+    public void times (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn1");
+        robot.clickOn("#btn3");
+        robot.clickOn("#timesBtn");
+        robot.clickOn("#btn1");
+        robot.clickOn("#btn3");
+        robot.clickOn("#equalsBtn");
+        assertEquals("169.0", display.getText());
+    }
+
+    @Test
+    public void times1 (FxRobot robot) {
+        display = robot.lookup("#display").queryAs(Label.class);
+        robot.clickOn("#btn8");
+        robot.clickOn("#btn5");
+        robot.clickOn("#btn2");
+        robot.clickOn("#timesBtn");
+        robot.clickOn("#btn2");
+        robot.clickOn("#btn4");
+        robot.clickOn("#equalsBtn");
+        assertEquals("20448.0", display.getText());
+    }
 }

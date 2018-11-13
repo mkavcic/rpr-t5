@@ -156,7 +156,9 @@ public class Controller {
     }
 
     public void dm(ActionEvent actionEvent) {
-        unos.set(unos.get() + ".");
+        if(!unos.get().contains(".")) {
+            unos.set(unos.get() + ".");
+        }
     }
 
     public void jednako(ActionEvent actionEvent) {

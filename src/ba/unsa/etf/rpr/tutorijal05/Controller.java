@@ -175,8 +175,11 @@ public class Controller {
             operacija = "";
         }
         if (operacija.equals("/")) {
-            unos.set(String.valueOf((kolicnik / Double.parseDouble(unos.get()))));
-            operacija = "";
+            if(Double.parseDouble(unos.get())==0) unos.set("Err");
+            else {
+                unos.set(String.valueOf((kolicnik / Double.parseDouble(unos.get()))));
+                operacija = "";
+            }
         }
         if (operacija.equals("%")) {
             unos.set(String.valueOf((posto * 0.01)));

@@ -8,10 +8,10 @@ public class Controller {
     private String operacija = "";
     private boolean brisi = false;
     private double zbir = 0;
-    private double razlika=0;
-    private double proizvod=1;
-    private double kolicnik=1;
-    private double posto=1;
+    private double razlika = 0;
+    private double proizvod = 1;
+    private double kolicnik = 1;
+    private double posto = 1;
 
     public Controller() {
         unos = new SimpleStringProperty("0");
@@ -165,19 +165,19 @@ public class Controller {
             operacija = "";
         }
         if (operacija.equals("-")) {
-            unos.set(String.valueOf((razlika-Double.parseDouble(unos.get()))));
+            unos.set(String.valueOf((razlika - Double.parseDouble(unos.get()))));
             operacija = "";
         }
         if (operacija.equals("x")) {
-            unos.set(String.valueOf((proizvod*Double.parseDouble(unos.get()))));
+            unos.set(String.valueOf((proizvod * Double.parseDouble(unos.get()))));
             operacija = "";
         }
         if (operacija.equals("/")) {
-            unos.set(String.valueOf((kolicnik/Double.parseDouble(unos.get()))));
+            unos.set(String.valueOf((kolicnik / Double.parseDouble(unos.get()))));
             operacija = "";
         }
         if (operacija.equals("%")) {
-            unos.set(String.valueOf((posto*0.01)));
+            unos.set(String.valueOf((posto * 0.01)));
             operacija = "";
         }
     }
@@ -195,19 +195,19 @@ public class Controller {
     }
 
     public void times(ActionEvent actionEvent) {
-        proizvod*= Double.parseDouble(unos.get());
+        proizvod *= Double.parseDouble(unos.get());
         operacija = "x";
         brisi = true;
     }
 
     public void divide(ActionEvent actionEvent) {
-        kolicnik*= Double.parseDouble(unos.get());
+        kolicnik *= Double.parseDouble(unos.get());
         operacija = "/";
         brisi = true;
     }
 
     public void percent(ActionEvent actionEvent) {
-        posto*= Double.parseDouble(unos.get());
+        posto *= Double.parseDouble(unos.get());
         operacija = "%";
         brisi = true;
     }
